@@ -1,0 +1,119 @@
+<!Doctype html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>Aprendendo</title>
+    <link rel="stylesheet" href="estilo.css"/>
+</head>
+<body>
+<div id="interface">
+    
+    <!-- INÍCIO CAPA -->
+    
+    <header>
+    <figure class="foto-capa">
+        <img src="capa.jpg" />
+        <figcaption>
+            <h1>Perdi & Achei</h1>
+            <p>Encontre seus pertences agora mesmo!</p>
+            <div class="botoes-capa">
+                <span id="botao-cadastrar"><a href="#cadastrar">Cadastrar</a></span>
+
+                <span id="botao-pesquisar"><a href="#pesquisar">Pesquisar</a></span>
+            </div>
+        </figcaption>
+        <nav>
+            <ul>
+                <li><a href="">Sobre</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </figure>
+    </header>
+    
+    <!-- FIM CAPA -->
+    
+    <!-- INÍCIO FORMULÁRIOS -->
+    
+    <div id="formularios">
+        <form id="cadastro" action="arquivo.php">
+            <h1 class="tituloFormulario"><a name="cadastrar">Cadastro de Objeto</a></h1>
+            <div id="dados">
+                <div class="quadro-dados">
+                    <legend>Dados do Usuário</legend>
+
+                    <p>Nome: <input type="text" name="usuariotNome" id="usuariocNome" maxlength="50" placeholder="Nome Completo"/></p>
+                    <!-- Sexo -->
+                    <p>Sexo:
+                        <select class="campo-select"name="usuariotSexo" id="usuariocSexo">
+                            <option selected>Masculino</option>
+                            <option >Feminino</option>
+                            <option>Outro</option>
+                        </select>
+                    </p>                        
+                    <p>E-mail: <input type="email" name="usuariotEmail" id="usuariocEmail" maxlength="70" placeholder="Ex: meuemail@email.com"/></p>
+                    <p>Cidade: 
+                        <select class="campo-select" name="usuariotCidade" id="usuariocCidade">
+                            <option selected>Belo Horizonte</option>
+                            <option >Sabará</option>
+                        </select>
+                    </p>
+
+                </div>
+
+                <div class="quadro-dados">
+                    <legend>Dados do Objeto</legend>
+
+                    <p>Nome: 
+                        <input type="text" name="objetotNome" id="objetocNome" maxlength="50" placeholder="Ex: Celular MotoX">
+                    </p>
+                    <p>Categorias:</p>
+                    <p class="categorias">
+                        <input type="radio" name="tAcessorios" id="acessorios" checked/> <label for="acessorios">Acessórios</label>
+                        <input type="radio" name="tEletronicos" id="eletronicos" /><label for="eletronicos">Eletrônicos</label>
+                        <input type="radio" name="tDocumentos" id="documentos" /> <label for="documentos">Documentos</label>
+                    </p>
+                    <p>Encontrado: 
+                        <input type="date" name="usuariotDataNascimento" id="usuariocDataNascimento"/>
+                    </p>
+
+                    <p>Descrição:</p>
+                    <textarea name="objetotDescricao" id="objetocDescricao" cols="45" rows="3" placeholder="Descreva o objeto aqui..." maxlength="400"></textarea>
+                </div>
+
+                <input type="submit" name="cadastrotEnviar" id="cadastrocEnviar" value="Cadastrar"/>
+            </div>
+        </form>
+
+        <!-- Pesquisa de Objeto -->
+        <form id="pesquisa" action="arquivo.php">
+            <h1 class="tituloFormulario"><a name="pesquisar">Pesquisar</a></h1>
+            <div id="dados">    
+
+                <div id="area-pesquisa">
+                    <input type="text" name="pesquisatNome" id="pesquisacNome" placeholder="Nome do Objeto"/>
+                    <input type="submit" name="cadastrotEnviar" id="pesquisacEnviar" value="Pesquisar"/>
+                    
+                    <p calss="categorias">
+                        <input type="radio" name="tAcessorios" id="acessorios" checked/>
+                        <label for="acessorios">Acessórios</label>
+                        <input type="radio" name="tEletronicos" id="eletronicos" />
+                        <label for="eletronicos">Eletrônicos</label>
+                        <input type="radio" name="tDocumentos" id="documentos" /> 
+                        <label for="documentos">Documentos</label>
+                    </p>
+                </div>
+
+        </div>
+    </form>
+    
+    <!-- FIM FORMULÁRIOS -->
+        
+    </div>
+    <footer id="rodape">
+        
+    </footer>
+    
+</div>
+</body>
+</html>
