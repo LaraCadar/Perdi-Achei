@@ -1,3 +1,2 @@
 teste de controle de versão
 Segundo teste
-Terceiro teste
