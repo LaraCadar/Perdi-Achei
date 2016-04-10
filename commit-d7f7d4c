@@ -1,0 +1,13 @@
+commit d7f7d4c1c84fbc864c6a34c62868c05336babd8b
+Author: deyloncarlo <deyloncarlo@gmail.com>
+Date:   Sun Apr 10 03:40:21 2016 -0300
+
+    Signed-off-by: deyloncarlo <deyloncarlo@gmail.com>
+
+diff --git a/documentos/requisitos.txt b/documentos/requisitos.txt
+index 8b13789..b71b7aa 100644
+--- a/documentos/requisitos.txt
++++ b/documentos/requisitos.txt
+@@ -1 +1 @@
+-
++teste de controle de versão
